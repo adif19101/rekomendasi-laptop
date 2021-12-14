@@ -252,6 +252,7 @@ class Laptop extends Controller
                 $laptop = new LaptopModel();
                 $i = 0;
                 $data = array();
+                $jmlrekom = count($lp);
                 foreach ($lp as $kdlp) {
                     $query = $builder->getWhere(['kode' => $kdlp]);
                     // $data[$i]['laptops'] = $laptop->where('kode',$kdlp);
@@ -264,22 +265,18 @@ class Laptop extends Controller
                         $data['rekomendasi'][$i]['laptop'] = $row->laptop;
                         $data['rekomendasi'][$i]['harga'] = $row->harga;
                         $data['rekomendasi'][$i]['panel'] = $row->panel;
+                        $data['rekomendasi'][$i]['ukuran'] = $row->ukuran;
+                        $data['rekomendasi'][$i]['resolusi'] = $row->resolusi;
+                        $data['rekomendasi'][$i]['cpu'] = $row->cpu;
+                        $data['rekomendasi'][$i]['ram'] = $row->ram;
+                        $data['rekomendasi'][$i]['kapasitas'] = $row->kapasitas;
+                        $data['rekomendasi'][$i]['tipe'] = $row->tipe;
+                        $data['rekomendasi'][$i]['gpu'] = $row->gpu;
+                        $data['rekomendasi'][$i]['os'] = $row->os;
+                        $data['rekomendasi'][$i]['port'] = $row->port;
+                        $data['rekomendasi'][$i]['konektivitas'] = $row->konektivitas;
+                        $data['rekomendasi'][$i]['berat'] = $row->berat;
                         
-                        // echo "i2= ", $i,"<br>";
-                        
-                        
-                        // $laptop->save([
-                        //     0 => [
-                        //         'laptop' => $row->laptop,
-                        //     ]
-                        // ]);
-                        // echo $laptops[0]['nama'];
-                        // print_r($data);
-                        // echo $rekomendasi[0]['laptop'];
-                        // echo $row->laptop;
-                        // echo $row->harga;
-                        // echo $row->panel;
-                        // echo "<br>";
                         $i++;
                     }
                 }
