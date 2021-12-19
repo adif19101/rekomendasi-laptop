@@ -4,23 +4,27 @@
 
 <?= \Config\Services::validation()->listErrors(); ?>
 
-<p>Pilih Kriteria Laptop</p>
 
-<form action="Laptop/cari" method="post">
+<form action="<?= base_url('Laptop/cari') ?>" method="post">
     <?= csrf_field() ?>
-    <div class="form-group">
-        <label for="budget">Budget Maksimal</label>
-        <select class="form-select" name="budget">
-            <option selected>Pilih Budget Maksimal</option>
-            <option value="5000000">Rp.5.000.000,-</option>
-            <option value="6000000">Rp.6.000.000,-</option>
-            <option value="7000000">Rp.7.000.000,-</option>
-            <option value="8000000">Rp.8.000.000,-</option>
-            <option value="9000000">Rp.9.000.000,-</option>
-            <option value="10000000">Rp.10.000.000,-</option>
-            <option value="15000000">Rp.15.000.000,-</option>
-            <option value="500000000">Diatas Rp.15.000.000,-</option>
+    <div class="form-group" aria-describedby="budgetHelp">
+    <div class="form-inline">
+        <label class="" for="budget">Kisaran Budget</label>
+        <select class="form-select col-auto offset-1" name="budget">
+            <option selected>Pilih Budget</option>
+            <option value="5000000">Dibawah Rp 5 Juta</option>
+            <option value="6000000">Antara Rp 5-6 Juta</option>
+            <option value="7000000">Antara Rp 6-7 Juta</option>
+            <option value="8000000">Antara Rp 7-8 Juta</option>
+            <option value="9000000">Antara Rp 8-9 Juta</option>
+            <option value="10000000">Antara Rp 9-10 Juta</option>
+            <option value="15000000">Antara Rp 10-15 Juta</option>
+            <option value="500000000">Diatas Rp 15 Juta</option>
         </select>
+    </div>
+        <small id="budgetHelp" class="form-text text-muted">
+            Mengetahui budget adalah hal terpenting dalam memilih laptop agar kita tidak membuang-buang uang membeli laptop yang terlalu mahal atau diluar budget
+        </small>
     </div>
 
     <div class="form-group" aria-describedby="resolusiHelp">

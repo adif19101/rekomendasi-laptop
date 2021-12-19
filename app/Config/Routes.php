@@ -21,7 +21,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -34,10 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Page::index');
 $routes->get('/about', 'Page::about');
 $routes->get('/faqs', 'Page::faqs');
-$routes->get('/news', 'News::index');
 $routes->add('/survey', 'Laptop::survey');
-$routes->add('/survey/(:segment)/cari', 'Laptop::rekomendasi');
-$routes->add('/survey/(:any)', 'Laptop::viewLaptop/$1');
+$routes->add('/Laptop/cari', 'Laptop::cari');
 
 /*
  * --------------------------------------------------------------------
