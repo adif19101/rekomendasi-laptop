@@ -15,7 +15,8 @@ class LoginController extends BaseController
     public function index()
     {
         if ($this->isLoggedIn()) {
-            return redirect()->to(base_url('dashboard'));
+            $data['title'] = 'lala';
+            return view('dashboard', $data);
         }
 
         $data = [
@@ -36,10 +37,10 @@ class LoginController extends BaseController
 
     public function login()
     {
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+        $email_ad = $this->request->getPost('email_ad');
+        $password_ad = $this->request->getPost('password_ad');
 
-        $credentials = ['email' => $email];
+        $credentials = ['email_ad' => $email_ad];
 
         $user = $this->model->where($credentials)
             ->first();
@@ -49,16 +50,16 @@ class LoginController extends BaseController
             return redirect()->back();
         }
 
-        $passwordCheck = password_verify($password, $user['password']);
+        $password_adCheck = password_verify($password_ad, $user['password_ad']);
 
-        if (! $passwordCheck) {
+        if (! $password_adCheck) {
             session()->setFlashdata('error', 'Email atau password anda salah.');
             return redirect()->back();
         }
 
         $userData = [
-            'name' => $user['name'],
-            'email' => $user['email'],
+            'nama_ad' => $user['nama_ad'],
+            'email_ad' => $user['email_ad'],
             'logged_in' => TRUE
         ];
 

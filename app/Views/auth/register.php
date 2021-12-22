@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/main') ?>
+<?= $this->extend('layout/login_layout') ?>
 
 <?= $this->section('content') ?>
 
@@ -17,24 +17,22 @@
 
                     <?php if (session()->getFlashdata('error')) { ?>
                         <div class="alert alert-danger">
-                            <?php foreach (session()->getFlashdata('error') as $field => $error) : ?>
-                                <p><?= $error ?></p>
-                            <?php endforeach ?>
+                            <p>error</p>
                         </div>
                     <?php } ?>
 
                     <?= form_open('register'); ?>
                     <div class="form-group">
-                        <label for="name">Nama</label>
-                        <input type="text" name="name" class="form-control" required>
+                        <label for="nama_ad">Nama</label>
+                        <input type="text" name="nama_ad" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <label for="email_ad">Email</label>
+                        <input type="email" name="email_ad" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" required>
+                        <label for="password_ad">Password</label>
+                        <input type="password" name="password_ad" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary">Register</button>

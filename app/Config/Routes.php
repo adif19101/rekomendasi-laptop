@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\LoginController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -47,6 +49,7 @@ $routes->group('login', function ($routes) {
 $routes->group('logout', function ($routes) {
     $routes->get('/', 'LogoutController::index');
 });
+$routes->get('/dashboard', 'LoginController::index');
 
 /*
  * --------------------------------------------------------------------

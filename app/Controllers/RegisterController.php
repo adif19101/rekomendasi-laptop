@@ -23,17 +23,17 @@ class RegisterController extends BaseController
 
     public function store()
     {
-        $name = $this->request->getPost('name');
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+        $nama_ad = $this->request->getPost('nama_ad');
+        $email_ad = $this->request->getPost('email_ad');
+        $password_ad = $this->request->getPost('password_ad');
 
         $user = [
-            'name' => $name,
-            'email' => $email,
-            'password' => $password
+            'nama_ad' => $nama_ad,
+            'email_ad' => $email_ad,
+            'password_ad' => $password_ad
         ];
 
-        $save = $this->model->save($user);
+        $save = $this->model->insert($user);
 
         if ($save) {
             session()->setFlashdata('success', 'Register Berhasil!');

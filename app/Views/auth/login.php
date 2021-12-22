@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/main') ?>
+<?= $this->extend('layout/login_layout') ?>
 
 <?= $this->section('content') ?>
 
@@ -23,12 +23,12 @@
 
                     <?= form_open('login'); ?>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <label for="email_ad">Email</label>
+                        <input type="email" name="email_ad" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" required>
+                        <label for="password_ad">Password</label>
+                        <input type="password" name="password_ad" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <button class="btn btn-primary">Login</button>

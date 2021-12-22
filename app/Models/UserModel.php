@@ -6,20 +6,17 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'users';
-    protected $allowedFields = ['name', 'email', 'password'];
-    protected $useTimeStamps = true;
-    protected $createdField = 'created_at';
-    protected $updatedField = 'updated_at';
+    protected $table = 'admin';
+    protected $allowedFields = ['nama_ad', 'email_ad', 'password_ad'];
 
     protected $validationRules = [
-        'name' => 'required',
-        'email' => 'required|valid_email|is_unique[users.email]',
-        'password' => 'required|min_length[8]'
+        'nama_ad' => 'required',
+        'email_ad' => 'required|valid_email|is_unique[admin.email_ad]',
+        'password_ad' => 'required|min_length[8]'
     ];
 
     protected $validationMessages = [
-        'email' => [
+        'email_ad' => [
             'is_unique' => 'Sorry, That email has already been taken. Please choose another.'
         ]
     ];
@@ -29,11 +26,11 @@ class UserModel extends Model
 
     protected function hashPassword(array $data)
     {
-        if (! isset($data['data']['password'])) {
+        if (! isset($data['data']['password_ad'])) {
             return $data;
         }
 
-        $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+        $data['data']['password_ad'] = password_hash($data['data']['password_ad'], PASSWORD_DEFAULT);
         return $data;
     }
 

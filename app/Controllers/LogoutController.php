@@ -6,8 +6,8 @@ class LogoutController extends BaseController
     {
 
         $userData = [
-            'name',
-            'email',
+            'nama_ad',
+            'email_ad',
             'logged_in'
         ];
 
