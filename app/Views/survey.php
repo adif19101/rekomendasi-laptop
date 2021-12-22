@@ -50,7 +50,7 @@
         </small>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" aria-describedby="layarHelp">
         <label for="layar">Ukuran Layar Maksimal</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="layar" id="layar1" value="13">
@@ -64,10 +64,13 @@
             <input class="form-check-input" type="radio" name="layar" id="layar3" value="17">
             <label class="form-check-label" for="layar3">17"</label>
         </div>
+        <small id="layarHelp" class="form-text text-muted">
+            Ukuran layar menentukan seberapa besar laptop anda. Semakin besar maka akan semakin berat dan sulit dibawa bepergian. Namun memiliki layar yang besar dapat memudahkan anda melihat konten pada layar
+        </small>
     </div>
 
-    <div class="form-group">
-        <label for="ram">Ukuran RAM Minimal</label><br>
+    <div class="form-group" aria-describedby="ramHelp">
+        <label for="ram">Ukuran RAM</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="ram" id="ram1" value="4">
             <label class="form-check-label" for="ram1">4GB</label>
@@ -80,9 +83,12 @@
             <input class="form-check-input" type="radio" name="ram" id="ram3" value="16">
             <label class="form-check-label" for="ram3">16GB</label>
         </div>
+        <small id="ramHelp" class="form-text text-muted">
+            Ukuran RAM menentukan seberapa banyak software/aplikasi yang dapat anda gunakan secara bersamaan. Pilihlah ukuran ram sesuai penggunaan anda, jika hanya untuk membuat dokumen dan berselancar di internet 4GB RAM sudah cukup namun jika pemakaian anda lebih dari sekedar membuat dokumen dan berinternet kami rekomendasikan memiliki 8GB RAM atau lebih.
+        </small>
     </div>
     
-    <div class="form-group">
+    <div class="form-group" aria-describedby="panelHelp">
         <label for="panel">Tipe Panel</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="panel" id="panel1" value="ips">
@@ -96,9 +102,12 @@
             <input class="form-check-input" type="radio" name="panel" id="panel3" value="tn">
             <label class="form-check-label" for="panel3">TN</label>
         </div>
+        <small id="panelHelp" class="form-text text-muted">
+            Tipe panel menentukan bagaimana karakteristik dari layar anda. IPS adalah tipe panel yang memiliki akurasi warna dan viewing angle(sudut pandang) yang paling baik sehingga cocok digunakan untuk pemakaian sehari-hari dan juga pemakaian yang memerlukan keakuratan warna. sedangkan TN memiliki akurasi warna dan viewing angle yang kurang baik namun memiliki respons time terbaik sehingga cocok digunakan untuk bermain game kompetitif. dan VA merupakan tipe panel yang memiliki kontras tinggi sehingga cocok digunakan pada tempat yang terang juga diluar ruangan.
+        </small>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" aria-describedby="cpuHelp">
         <label for="cpu">Tingkat CPU Minimum</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="cpu" id="cpu1" value="entry">
@@ -120,10 +129,13 @@
             <input class="form-check-input" type="radio" name="cpu" id="cpu5" value="top">
             <label class="form-check-label" for="cpu5">Top</label>
         </div>
+        <small id="cpuHelp" class="form-text text-muted">
+            Tingkat CPU menentukan performa komputasi laptop anda. Tingkat Entry merupakan CPU seri Celeron, Pentium, dan sekelasnya cocok untuk penggunaan ringan sehari-hari seperti browsing internet dan membuat dokumnen. Tingkat Rendah merupakan CPU seri I3 dan sekelasnya cocok untuk penggunaan ringan. Tingkat Sedang merupakan CPU seri I5 dan sekelasnya cocok untuk penggunaan komputasi sedang. Tingkat Tinggi merupakan CPU seri I7 dan sekelasnya cocok untuk penggunaan berat. Tingkat Top merupakan CPU Seri I9 dan sekelasnya cocok untuk penggunaan sangat berat.
+        </small>
     </div>
 
-    <div class="form-group">
-        <label for="gpu">Tingkat GPU Minimum</label><br>
+    <div class="form-group" aria-describedby="gpuHelp">
+        <label for="gpu">Tingkat GPU</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="gpu" id="gpu1" value="integrated">
             <label class="form-check-label" for="gpu1">Integrated</label>
@@ -140,10 +152,13 @@
             <input class="form-check-input" type="radio" name="gpu" id="gpu4" value="tinggi">
             <label class="form-check-label" for="gpu4">Tinggi</label>
         </div>
+        <small id="gpuHelp" class="form-text text-muted">
+            Tingkat GPU menentukan performa grafis laptop anda. Tingkat Integrated merupakan GPU bawaan dari CPU cocok jika anda hanya menggunakannya untuk menonton video dan pekerjaan sehari-hari lainnya. Tingkat Rendah merupakan GPU seri MX dan sekelasnya yang cocok untuk edit foto dan video ringan. Tingkat Sedang merupakan GPU seri GTX dan sekelasnya cocok untuk edit foto, video, desain 3D, dan bermain game sedang hingga berat. Tingkat Tinggi merupakan GPU seri RTX dan sekelasnya cocok untuk penggunaan berat.
+        </small>
     </div>
 
-    <div class="form-group">
-        <label for="kapasitas">Kapasitas Penyimpanan Minimum</label><br>
+    <div class="form-group" aria-describedby="kapasitasHelp">
+        <label for="kapasitas">Kapasitas Penyimpanan</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="kapasitas" id="kapasitas1" value="128">
             <label class="form-check-label" for="kapasitas1">128GB</label>
@@ -160,9 +175,12 @@
             <input class="form-check-input" type="radio" name="kapasitas" id="kapasitas4" value="1000">
             <label class="form-check-label" for="kapasitas4">1000GB</label>
         </div>
+        <small id="kapasitasHelp" class="form-text text-muted">
+            Kapasitas penyimpanan menentukan seberapa besar anda bisa menyimpan data. Semakin besar maka semakin banyak data yang bisa disimpan.
+        </small>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" aria-describedby="tipeHelp">
         <label for="tipe">Tipe Penyimpanan</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="tipe" id="tipe1" value="ssd">
@@ -176,6 +194,9 @@
             <input class="form-check-input" type="radio" name="tipe" id="tipe3" value="emmc">
             <label class="form-check-label" for="tipe3">eMMC</label>
         </div>
+        <small id="tipeHelp" class="form-text text-muted">
+            Tipe penyimpanan menentukan bagaimana karakteristik dari penyimpanan anda. SSD unggul dengan kecepatan baca dan tulis yang sangat cepat namun cenderung lebih mahal membuat SSD sering digunakan untuk menyimpan sistem operasi dan aplikasi-aplikasi yang sering digunakan. HDD unggul pada kapasitas penyimpanan yang besar dan murah namun cenderung lebih lambat membuat HDD sering digunakan untuk penyimpanan data besar. eMMC unggul pada kecepatan membaca file-file kecil dan ukuran fisiknya yang juga kecil membuat eMMC sering digunakan sebagai penyimpanan pada perangkat kompak seperti 2-in-1. 
+        </small>
     </div>
 
     <div>

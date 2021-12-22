@@ -12,7 +12,7 @@ class Laptop extends Controller
     public function survey()
     {
         $data['judul'] = 'Pencarian Laptop';
-        $data['subjudul'] = 'Pilih kriteria laptop yang anda mau';
+        $data['subjudul'] = 'Masukkan kriteria laptop anda';
         echo view("survey", $data);
     }
 
