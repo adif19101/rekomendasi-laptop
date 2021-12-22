@@ -36,6 +36,17 @@ $routes->get('/about', 'Page::about');
 $routes->get('/faqs', 'Page::faqs');
 $routes->add('/survey', 'Laptop::survey');
 $routes->add('/Laptop/cari', 'Laptop::cari');
+$routes->group('register', function($routes){
+    $routes->get('/', 'RegisterController::index');
+    $routes->post('/', 'RegisterController::store');
+});
+$routes->group('login', function ($routes) {
+    $routes->get('/', 'LoginController::index');
+    $routes->post('/', 'LoginController::login');
+});
+$routes->group('logout', function ($routes) {
+    $routes->get('/', 'LogoutController::index');
+});
 
 /*
  * --------------------------------------------------------------------
