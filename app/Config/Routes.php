@@ -49,7 +49,15 @@ $routes->group('login', function ($routes) {
 $routes->group('logout', function ($routes) {
     $routes->get('/', 'LogoutController::index');
 });
-$routes->get('/dashboard', 'LoginController::index');
+$routes->group('dashboard', function ($routes) {
+    $routes->get('/', 'Admin::index');
+    $routes->get('laptop/(:segment)/detail', 'Admin::detail/$1');
+    $routes->get('laptop/(:segment)/ubah', 'Admin::ubah/$1');
+    $routes->post('laptop/(:segment)/ubah', 'Admin::ubahex/$1');
+    $routes->get('laptop/(:segment)/hapus', 'Admin::hapus/$1');
+    $routes->add('laptop/tambah', 'Admin::tambah');
+});
+
 
 /*
  * --------------------------------------------------------------------

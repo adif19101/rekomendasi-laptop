@@ -22,11 +22,11 @@
 <body>
 
     <?= $this->include('layout/admin_navbar') ?>
-    <?= $this->include('layout/admin_header') ?>
-    
+
     <div class="container">
         <div class="row">
             <div class="col-md">
+            <br><br>
                 <?= $this->renderSection('content') ?>
             </div>
         </div>

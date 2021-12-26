@@ -10,6 +10,6 @@ class LaptopModel extends Model
     // protected $harga        = 'harga';
 
     // protected $allowedFields = ['budget', 'resolusi', 'layar', 'ram', 'panel', 'cpu', 'gpu', 'kapasitas', 'tipe'];
-    protected $allowedFields = ['kode', 'laptop', 'harga', 'panel', 'ukuran', 'resolusi', 'cpu', 'ram', 'kapasitas', 'tipe', 'gpu', 'os', 'port', 'konektivitas', 'berat'];
+    protected $allowedFields = ['id', 'kode', 'laptop', 'harga', 'panel', 'ukuran', 'resolusi', 'cpu', 'ram', 'kapasitas', 'tipe', 'gpu', 'os', 'port', 'konektivitas', 'berat'];
 
 }

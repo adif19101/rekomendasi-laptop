@@ -19,6 +19,7 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
+        'cek'      => \App\Filters\Cek::class,
     ];
 
     /**
@@ -31,6 +32,7 @@ class Filters extends BaseConfig
         'before' => [
             // 'honeypot',
             // 'csrf',
+            'cek' => ['except' => ['login', 'logout', 'Laptop/cari', '/survey','/']]
         ],
         'after' => [
             'toolbar',

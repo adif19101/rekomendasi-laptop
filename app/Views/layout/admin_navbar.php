@@ -7,10 +7,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('survey') ?>">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('dashboard') ?>">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('dashboard/laptop/tambah') ?>">Input</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('survey') ?>">Rekomendasi</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('register') ?>">Admin</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url('logout') ?>">Logout</a></li>
             </ul>
         </div>
