@@ -15,7 +15,7 @@ class RegisterController extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Register | Seri Tutorial CodeIgniter 4: Login dan Register @ qadrlabs.com'
+            'title' => 'Tambah Admin'
         ];
 
         return view('auth/register', $data);

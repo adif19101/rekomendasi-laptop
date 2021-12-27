@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Cari Laptop</title>
+    <title><?= $title ?></title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="<?= base_url('assets/favicon.ico') ?>" />
     <!-- Font Awesome icons (free version)-->

@@ -7,7 +7,7 @@
         <div class="col-md-4 offset-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="text-center" style="font-weight: bold;">REGISTER</h4>
+                    <h4 class="text-center" style="font-weight: bold;">Tambahkan ADMIN</h4>
                     <hr>
                     <?php if (session()->getFlashdata('success')) { ?>
                         <div class="alert alert-success">
@@ -40,9 +40,6 @@
                     <?= form_close(); ?>
                 </div>
 
-            </div>
-            <div class="text-center mt-2">
-                Sudah punya akun? <a href="<?php echo base_url('login'); ?>">Silakan login.</a>
             </div>
         </div>
     </div>

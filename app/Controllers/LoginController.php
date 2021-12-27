@@ -15,12 +15,12 @@ class LoginController extends BaseController
     public function index()
     {
         if ($this->isLoggedIn()) {
-            $data['title'] = 'lala';
+            $data['title'] = 'Dashboard';
             return view('dashboard', $data);
         }
 
         $data = [
-            'title' => 'Login | Seri Tutorial CodeIgniter 4: Login dan Register @ qadrlabs.com'
+            'title' => 'Login'
         ];
 
         return view('auth/login', $data);
