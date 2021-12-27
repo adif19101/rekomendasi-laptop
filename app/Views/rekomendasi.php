@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md">
             <?php
             for ($i=0; $i < count($rekomendasi); $i++) {
             ?>
@@ -161,10 +161,6 @@
             }
             ?>
             
-        </div>
-
-        <div class="col-md-4">
-        Foto
         </div>
     </div>
 </div>

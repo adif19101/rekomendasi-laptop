@@ -37,7 +37,7 @@ class RegisterController extends BaseController
 
         if ($save) {
             session()->setFlashdata('success', 'Register Berhasil!');
-            return redirect()->to(base_url('login'));
+            return view(base_url('dashboard'));
         } else {
             session()->setFlashdata('error', $this->model->errors());
             return redirect()->back();

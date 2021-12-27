@@ -21,7 +21,7 @@
                         </div>
                     <?php } ?>
 
-                    <?= form_open('register'); ?>
+                    <?= form_open(base_url().'/register'); ?>
                     <div class="form-group">
                         <label for="nama_ad">Nama</label>
                         <input type="text" name="nama_ad" class="form-control" required>

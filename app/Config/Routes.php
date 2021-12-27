@@ -34,8 +34,8 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Page::index');
+// $routes->get('/about', 'Page::about');
 $routes->get('/about', 'Page::about');
-$routes->get('/faqs', 'Page::faqs');
 $routes->add('/survey', 'Laptop::survey');
 $routes->add('/Laptop/cari', 'Laptop::cari');
 $routes->group('register', function($routes){

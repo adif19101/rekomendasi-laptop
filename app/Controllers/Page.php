@@ -12,8 +12,7 @@ class Page extends Controller
     }
     public function about()
     {
-        // $data['name'] = "Tes";
-        // echo view("about page", $data);
-        echo view("about");
+        $data['judul'] = 'Project UAS Pengantar Kecerdasan Buatan';
+        echo view("about", $data);
     }
 }

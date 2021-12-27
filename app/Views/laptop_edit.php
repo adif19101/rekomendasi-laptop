@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md">
             <h2 class="h2"><?= $laptop['laptop'] ?></h2>
             <div class="container">
                 <h5 class="h5">Ubah Data</h5>
@@ -183,10 +183,6 @@
                 </form>
             </div>
             
-        </div>
-
-        <div class="col-md-4">
-        Foto
         </div>
     </div>
 

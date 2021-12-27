@@ -21,7 +21,7 @@
                         </div>
                     <?php } ?>
 
-                    <?= form_open('login'); ?>
+                    <?= form_open(base_url().'/login'); ?>
                     <div class="form-group">
                         <label for="email_ad">Email</label>
                         <input type="email" name="email_ad" class="form-control" required>
@@ -37,9 +37,6 @@
 
                 </div>
 
-            </div>
-            <div class="text-center mt-2">
-                Belum punya akun? <a href="<?php echo base_url('register'); ?>">Silakan daftar.</a>
             </div>
         </div>
     </div>
